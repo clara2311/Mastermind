@@ -1,3 +1,4 @@
+import java.awt.BorderLayout;
 import java.awt.Frame;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -8,8 +9,9 @@ public class Vue implements WindowListener{
 	public Vue() {
 		Frame F = new Frame("Mastermind");
 		F.setSize(400,600);
-		JPanel panneau = new JPanel();
-		F.add(panneau);
+		JPanel plateau = new JPanel();
+		plateau.setLayout(new BorderLayout());
+		F.add(plateau);
 		F.addWindowListener(this);
 		F.setVisible(true);
 	}
@@ -62,3 +64,5 @@ public class Vue implements WindowListener{
 	}
 
 }
+
+//8 couleurs
