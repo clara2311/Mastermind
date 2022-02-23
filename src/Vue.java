@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Frame;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -11,10 +12,13 @@ public class Vue implements WindowListener{
 		F.setSize(400,600);
 		JPanel plateau = new JPanel();
 		plateau.setLayout(new BorderLayout());
+		plateau.add(new boutons_couleurs(),BorderLayout.SOUTH);
 		F.add(plateau);
 		F.addWindowListener(this);
 		F.setVisible(true);
 	}
+
+	
 
 	public static void main(String[] args) {
 		new Vue();
