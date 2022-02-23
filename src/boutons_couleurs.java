@@ -15,7 +15,7 @@ public class boutons_couleurs extends JPanel {
 		this.add(b4);
 		bouton_style b5=new bouton_style(Color.red);
 		this.add(b5);
-		bouton_style b6=new bouton_style(Color.yellow);
+		bouton_style b6=new bouton_style(Color.orange);
 		this.add(b6);
 		bouton_style b7=new bouton_style(Color.white);
 		this.add(b7);
